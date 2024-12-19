@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Precious Spa</title>
+    <link rel="stylesheet" href="../css/stylo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Precious Spa</h1>
+            <a href="#" id="filterBtn">Filtrar Joyas</a>
+        </div>
+    </header>
+    <div class="container">
+        <table id="jewelryTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Metal</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="popup" id="filterPopup">
+        <h2>Filtrar Joyas</h2>
+        <input type="number" id="precioMin" placeholder="Precio Mínimo">
+        <input type="number" id="precioMax" placeholder="Precio Máximo">
+        <input type="text" id="categoria" placeholder="Categoría">
+        <input type="text" id="metal" placeholder="Metal">
+        <button id="applyFilters">Aplicar Filtros</button>
+        <button class="close-btn" id="closePopup">Cerrar</button>
+        <table id="filteredJewelryTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Metal</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Precious Spa. Todos los derechos reservados.</p>
+           
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
